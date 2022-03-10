@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="title">LIBRARY</div>
+    </div>
+    <div class="main">
+        <div class="book-container">
+            <div class="add-book-card">
+                <button class="add-book-button">Add Book</button>
+            </div>
+        </div>
+        <div class="add-book-form-overlay">
+            <form class="add-book-form">
+                <label for="title">Title:</label><br>
+                <input type="text" name="title" id="form-title"><br>
+                <label for="author">Author:</label><br>
+                <input type="text" name="author" id="form-author"><br>
+                <label for="pages">Number of Pages:</label><br>
+                <input type="number" name="pages" id="form-no-of-pages"><br>
+                <p>Have you read this book?</p>
+                <div>
+                    <input type="radio" id="read" name="read" value="read" checked>
+                    <label for="read">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="not-read" name="read" value="not-read">
+                    <label for="not-read">No</label>
+                </div>
+                <input id="submit-book-button" type="submit" value="submit">
+                <input id="cancel-add-book-button" type="button" value="cancel">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">&copy; 2022 Quwam Ogunlaja</div>
+    </div>
+</body>
+</html>
