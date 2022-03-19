@@ -8,20 +8,23 @@ const cancelAddBookButton = document.querySelector('#cancel-add-book-button');
 
 let myLibrary = [];
 
-function Book(title, author, numberOfPages, readYet) {
-    this.title = title;
-    this.author = author;
-    this.numberOfPages = numberOfPages;
-    this.readYet = readYet;
-    this.id = (this.title + '-' + this.author).replace(/\s/g, '');
-}
+class Book {
+    constructor(title, author, numberOfPages, readYet) {
+        this.title = title;
+        this.author = author;
+        this.numberOfPages = numberOfPages;
+        this.readYet = readYet;
+        this.id = (this.title + '-' + this.author).replace(/\s/g, '');
+    }
 
-Book.prototype.info = function() {
-    return `${this.title} by ${this.author}, ${this.numberOfPages} pages, ${this.readYet ? 'read' : 'not read yet'}`;
-}
+    info() {
+        return `${this.title} by ${this.author}, ${this.numberOfPages} pages, ${this.readYet ? 'read' : 'not read yet'}`;    
+    }
 
-Book.prototype.toggleReadState = function() {
-    this.readYet = !this.readYet;
+    toggleReadState() {
+        this.readYet = !this.readYet;
+    }
+    
 }
 
 function addBookToLibrary(name, author, numberOfPages, readYet) {
