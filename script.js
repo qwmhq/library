@@ -126,9 +126,4 @@ addBookForm.addEventListener('submit', submitBook);
 sumbitBookButton.addEventListener('click', submitBook);
 cancelAddBookButton.addEventListener('click', () => hideBookForm());
 
-addBookToLibrary('And Then There Were None', 'Agatha Christie', 230, true);
-addBookToLibrary('The Hobbit', 'J.R.R Tolkien', 295, false);
-addBookToLibrary('The Subtle Art of Not Giving a Fuck', 'Mark Manson', 224, true);
-addBookToLibrary('Half of a Yellow Sun', 'Chimamanda Ngozi Adichie', 448, false);
-
 displayBooks();
